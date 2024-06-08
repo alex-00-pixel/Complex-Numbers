@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Number Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px 0;
+            margin: 0;
+        }
+        form {
+            background: #fff;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        label, input, select, button {
+            display: block;
+            width: calc(100% - 40px);
+            font-size: 16px;
+        }
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #5a9bd3;
+        }
+        h2 {
+            color: #4682b4;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Complex Number Operations</h1>
+    <form action="/calculate" method="post">
+        <label for="num1">First complex number (e.g., 2+3i):</label>
+        <input type="text" id="num1" name="num1" required><br><br>
+        <label for="num2">Second complex number (e.g., 1+4i):</label>
+        <input type="text" id="num2" name="num2" required><br><br>
+        <label for="operation">Operation:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
