@@ -10,7 +10,7 @@ This is a web application for performing operations on complex numbers. The appl
 
 ## Demo
 
-![Demo Screenshot](screenshot.png)
+![Demo Screenshot](Screenshot.png)
 
 ## Requirements
 
