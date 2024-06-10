@@ -1,4 +1,4 @@
-# Complex Number Operations Web App
+# Complex Number calculator Web App
 
 This is a web application for performing operations on complex numbers. The application is built using Flask and provides a user-friendly interface to input complex numbers and choose an operation (addition, subtraction, multiplication, division).
 
